@@ -40,7 +40,9 @@ new_courses <- current %>%
   arrange(desc(total)) %>%
   slice(1:5) %>%
   gt() %>%
-  title = md("**Top 5 New Courses**")
+  tab_header(
+    title = md("**Top 5 Enrolled Concentrations**")
+  )
 
 new_courses
 ```
